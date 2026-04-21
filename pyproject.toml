@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flowdis"
+version = "0.1.0"
+description = "FlowDIS: Language-Guided Dichotomous Image Segmentation with Flow Matching"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = { text = "MIT" }
+authors = [
+    { name = "Andranik Sargsyan" },
+    { name = "Shant Navasardyan" },
+]
+keywords = ["segmentation", "flow-matching", "background removal", "deep-learning"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+]
+dependencies = [
+    "accelerate>=1.12.0,<2.0",
+    "einops>=0.8.2,<1.0",
+    "gradio==6.3.0",
+    "huggingface_hub>=0.24.0,<1.0",
+    "numpy>=1.24.0,<2.0",
+    "opencv-python>=4.11.0,<5.0",
+    "Pillow>=10.0.0,<11.0",
+    "safetensors>=0.7.0,<1.0",
+    "scipy>=1.17.1,<2.0",
+    "sentencepiece>=0.2.1,<1.0",
+    "tiktoken>=0.12.0,<1.0",
+    "torch>=2.8.0,<3.0",
+    "torchvision>=0.25.0",
+    "transformers>=4.39.0,<5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "ruff>=0.1.0",
+]
+
+[tool.setuptools]
+packages = ["flowdis"]

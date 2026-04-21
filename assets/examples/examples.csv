@@ -1,0 +1,8 @@
+image_name,prompt,resolution,num_steps
+0.jpg,,2048,8
+1.jpg,,2048,8
+2.png,,1536,4
+3.jpg,,1536,2
+4.jpg,measuring tape,2048,8
+5.jpg,white shoes,1280,2
+6.jpg,bicycle,2048,8
