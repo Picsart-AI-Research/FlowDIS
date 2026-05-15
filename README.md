@@ -12,6 +12,7 @@
 <div align="center" style="display: flex; justify-content: center; flex-wrap: wrap; margin-bottom: 3px;"> 
   <a href='https://arxiv.org/abs/2605.05077'><img src='https://img.shields.io/badge/arXiv-Paper-red?logo=arXiv&logoColor=red'></a>&ensp; 
   <a href='https://flowdis.github.io/'><img src='https://img.shields.io/badge/Page-Project-blue'></a>&ensp; 
+  <a href="https://huggingface.co/spaces/PAIR/FlowDIS"><img src="https://img.shields.io/badge/Hugging%20Face-Space-yellow?logo=huggingface" alt="HuggingFace Space"></a>&ensp;
   <a href='https://drive.google.com/drive/folders/1xWRlwnNbfELDqduPxJ6Z04xP2-9zfaJj?usp=sharing'><img src='https://img.shields.io/badge/Google%20Drive-Stuff-green?logo=googledrive&logoColor=green'></a>&ensp;
 </div>
 
@@ -30,9 +31,9 @@
 <p>
 
 ## News
-* [06/05/2026] 💻 [Project page](https://flowdis.github.io) released.
-* [06/05/2026] 📄 Paper has been released on [arXiv](https://arxiv.org/abs/2605.05077).
-* [21/02/2026] 🔥 FlowDIS has been accepted to CVPR 2026.
+- **[May 15, 2026]** 🤗 Hugging Face Space released.
+- **[May 6, 2026]** 📄 Paper released on arXiv.
+- **[February 21, 2026]** 🎉 FlowDIS accepted to CVPR 2026.
 
 ## Requirements
 
@@ -93,7 +94,6 @@ python inference.py \
 | `--prompts-json` | no | `None` | JSON mapping `{ "image_filename": "prompt" }`. If omitted, empty prompts are used. |
 | `--num-steps` | no | `2` | Number of flow-matching sampling steps. |
 | `--resolution` | no | `1024` | Image resolution used for inference. |
-| `--num-samples` | no | `-1` | Limit the number of images processed (`-1` means all). |
 
 ### Prompts file format
 
